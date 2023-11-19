@@ -38,29 +38,20 @@ console.log(arr2)
 console.log()
 
 //Задача 3
-let n3 = 6;
-let sflag = true;
+let n3 = 5;
 
-for(let num in arr2)
-{
-    if(arr2[num] == n3)
-    {
-        console.log(num)
-        sflag = false;
-        break
-    }
+
+if (arr2.indexOf(n3) >= 0){
+    console.log(arr2.indexOf(n3))
 }
-if(sflag)
-{
+else{
     console.log('Элемент не найден')
 }
+
 console.log()
 
 //Задача 4
 arr3 = [2, 2, 17, 21, 45, 12, 54, 31, 53];
-arr4 = [12, 44, 23, 5]
-for(let i in arr4)
-{
-    arr3.push(arr4[i])
-}
-console.log(arr3)
+arr4 = [...arr3, 12, 44, 23, 5]
+
+console.log(arr4)
