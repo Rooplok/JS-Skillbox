@@ -177,6 +177,7 @@ document.body.addEventListener('click', (e) => {
     const target = e.target.closest('.add-to-cart');
     if (target) {
         cart.addCartId(target.dataset.id)
+        
     }
 })
 getGoods();
