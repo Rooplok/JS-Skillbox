@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Панель управления студентами</title>
+    <script defer src="./main.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="form_s">
+    <form class="form" id="myForm">
+
+        <h1 class="form_title">Добавление студента</h1>
+
+        <div class="q_input">
+            <div class="form_group">
+                <input class="form_input" type="text" id="name" name="name" placeholder=" ">
+                <label class="form_label">Имя</label>
+            </div>
+
+            <div class="form_group">
+                <input class="form_input" type="date" id="date" name="date" placeholder=" ">
+                <label class="form_label">Дата рождения</label>
+            </div>
+
+            <div class="form_group">
+                <input class="form_input" type="text" id="surname" name="surname" placeholder=" ">
+                <label class="form_label">Фамилия</label>
+            </div>
+
+            <div class="form_group">
+                <input class="form_input" type="number" id="startYear" name="startYear" placeholder=" ">
+                <label class="form_label">Год начала обучения</label>
+            </div>
+
+            <div class="form_group">
+                <input class="form_input" type="text" id="middleName" name="middleName" placeholder=" ">
+                <label class="form_label">Отчество</label>
+            </div>      
+
+            <div class="form_group">
+                <input class="form_input" type="text" id="faculty" name="faculty" placeholder=" ">
+                <label class="form_label">Факультет</label>
+            </div>
+        </div>
+
+        <button class="form_button" type="submit">Добавить</button>
+    </form>
+</div>
+
+
+  <table class="table" id="table">
+    <tr>
+        <td>Ф.И.О.</td>
+        <td>Факультет</td>
+        <td>Дата рождения и возраст</td>
+        <td>годы обучения</td>
+      </tr>
+  </table>
+
+</body>
+</html>
+
+
+
+
+
+
+<!-- <form class="form" id="myForm">
+    <h1 class="form_title">Добавление студента</h1>
+
+    <label for="name">Имя:</label>
+    <input type="text" id="name" name="name"><br><br>
+
+    <label for="surname">Фамилия:</label>
+    <input type="text" id="surname" name="surname"><br><br>
+
+    <label for="middleName">Отчество:</label>
+    <input type="text" id="middleName" name="middleName"><br><br>
+
+    <label for="date">Дата рождения:</label>
+    <input type="date" id="date" name="date"><br><br>
+
+    <label for="startYear">Год поступления:</label>
+    <input type="number" id="startYear" name="startYear"><br><br>
+
+    <label for="faculty">Факультет:</label>
+    <input type="text" id="faculty" name="faculty"><br><br>
+
+    <button type="submit">Сохранить</button>
+  </form>
+
+  <table id="table"></table> -->
