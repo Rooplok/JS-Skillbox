@@ -11,22 +11,12 @@ console.log(getAge(2007));
 console.log();
 
 //Задача 2
-function filter(wList, bList){
-    let rList = [];
-    for (let email of wList){
-        if (!bList.includes(email)){
-            rList.push(email);
-        }
-    }
-    return rList;
-}
-
 // Массив с почтовыми адресами:
 let whiteList = ['my-email@gmail.ru', 'jsfunc@mail.ru', 'annavkmail@vk.ru', 'fullname@skill.ru', 'goodday@day.ru']
 // Массив с почтовыми адресами в чёрном списке:
 let blackList = ['jsfunc@mail.ru','goodday@day.ru']
 // Вызов созданной функции:
-let result = filter(whiteList, blackList)
+let result = whiteList.filter(item => !blackList.includes(item));
 
 console.log(result)
 console.log()

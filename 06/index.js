@@ -27,19 +27,9 @@ let allUsers = [
     { name: 'Антон', age: 7 }
 ]
 
-function getOlderUserArray(array) {
-    let maxAge = 0;
-    let olserUser;
-    for (let user of array) {
-        if (user.age > maxAge) {
-            maxAge = user.age;
-            olserUser = user.name;
-        }
-    }
-    return olserUser;
-}
+let result = allUsers.sort((a, b) => b.age - a.age)
 
-console.log(getOlderUserArray(allUsers));
+console.log(result[0].name);
 console.log();
 
 //Задача 3
