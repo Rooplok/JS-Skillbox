@@ -2,16 +2,17 @@ const form = document.getElementById('myForm');
 const table = document.getElementById('table');
 
 form.addEventListener('submit', function(event) {
-    if (inputStudentName !== '' &&
-        inputStudentSName !== '' &&
-        inputStudentLName !== '' &&
-        new Date(inputStudentBDate) >= new Date('1900-01-01') &&
-        new Date(inputStudentBDate) <= new Date() &&
-        parseInt(inputStudentStLearn) &&
-        parseInt(inputStudentStLearn) >= 2000 &&
-        parseInt(inputStudentStLearn) <= new Date().getFullYear() &&
-        inputStudentFac !== ''
-    ) {
+    //if (inputStudentName !== '' &&
+    //    inputStudentSName !== '' &&
+    //    inputStudentLName !== '' &&
+    //    new Date(inputStudentBDate) >= new Date('1900-01-01') &&
+    //    new Date(inputStudentBDate) <= new Date() &&
+    //   parseInt(inputStudentStLearn) &&
+    //    parseInt(inputStudentStLearn) >= 2000 &&
+    //    parseInt(inputStudentStLearn) <= new Date().getFullYear() &&
+    //    inputStudentFac !== ''
+    //) 
+    {
         event.preventDefault(); // Отменяем отправку формы
 
         const name = form.elements.name.value;
@@ -36,8 +37,6 @@ form.addEventListener('submit', function(event) {
         localStorage.setItem(`${name}${surname}`, JSON.stringify(student));
 
         form.reset(); // Очищаем форму
-    } else {
-        
     }
 });
 
